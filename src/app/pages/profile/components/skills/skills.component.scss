@@ -1,0 +1,51 @@
+@import './../../../../../sass/mixins';
+@import './../../../../../sass/variables';
+
+/* General container */
+.services-container {
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* Service card */
+    .section-card {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid $borderColor;
+        .section-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            /* Expand/Collapse */
+            .toggle {
+                padding-right: 0.5rem;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        /* Card content container */
+        .fee-container {
+            background: $backgroundColor;
+            padding: 0.75rem 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .rate-container {
+            padding-bottom: 0.75rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: baseline;
+            & > label {
+                margin-left: 1rem;
+            }
+            /* Starts Rating */
+            .stars-container:focus {
+                outline: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import './../../../../../sass/variables';
+@import './../../../../../sass/mixins';
+
+/* Profile header */
+.profile-header {
+    display: grid;
+    grid-template-columns: auto 3fr;
+    grid-template-areas: "name actions";
+    grid-gap: 40px;
+    margin-bottom: 2em;
+    border-bottom: 1px solid $borderColor;
+    & > div {
+        padding-bottom: 1.5rem;
+    }
+    .section-name {
+        grid-area: name;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+        h4 {
+            align-self: center;
+            margin-bottom: 0;
+        }
+    }
+            
+    .actions {
+        grid-area: actions;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-end;
+        .btn {
+            width: 120px;
+            margin-left: 0.3em;
+        }
+    }
+}
+
+/* Profile information */
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .user-services {
+        background-color: #ffffff;
+    }
+}

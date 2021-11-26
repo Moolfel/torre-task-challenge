@@ -1,0 +1,31 @@
+<div class="services-container">
+    <h3>{{'services' | translate}}</h3>
+    <div *ngFor="let service of services">
+        <label class="subtitle">{{service.service_name}}</label>
+        <div *ngFor="let section of service.sections" class="section-card">
+            <div class="section-title bold" [ngClass]="{'primary-color-text' : !section.hidden}">
+                <label>{{section.section_name}}</label>
+                <label class="toggle" *ngIf="!section.hidden" (click)="onClickShow(service.service_name, section.id)">
+                    {{'hide' | translate}}
+                    <fa-icon icon="angle-up"></fa-icon>
+                </label>
+                <label class="toggle" *ngIf="section.hidden" (click)="onClickShow(service.service_name, section.id)">
+                    {{'show' | translate}}
+                    <fa-icon icon="angle-down"></fa-icon>
+                </label>
+            </div>
+            <div *ngIf="!section.hidden" class="fee-container">
+                <label>{{'proficiency' | translate}}</label>
+                <label class="bold">{{'placeholder.rate' | translate}}</label>
+            </div>
+            <div *ngIf="section.hidden" class="rate-container">
+                <ngb-rating [(rate)]="section.section_rate" [max]="maxRating" class="stars-container">
+                    <ng-template let-fill="fill" let-index="index">
+                        <span class="star" [class.filled]="fill === 100">&#9733;</span>
+                    </ng-template>
+                </ngb-rating>
+                <label class="bold">{{'placeholder.rate' | translate}}</label>
+            </div>
+        </div>
+    </div>
+</div>

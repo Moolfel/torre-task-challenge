@@ -1,0 +1,29 @@
+@import './../../../../sass/variables';
+@import './../../../../sass/mixins';
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "copyright links";
+    margin-bottom: 1rem;
+    border-top: 1px solid $borderColor;
+    padding-top: 0.5rem;
+    .copyright {
+        grid-area: copyright;
+    }
+    .links {
+        grid-area: links;
+        justify-self: end;
+        display: flex;
+        flex-direction:  row;
+    
+        a:first-child::after {
+            margin-right: 1rem;
+            margin-left: 1rem;
+            content: '|';        
+            @include themify($themes) {
+                color: themed('primaryColor');
+            }
+        }
+    }
+}

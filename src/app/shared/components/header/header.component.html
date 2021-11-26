@@ -1,0 +1,19 @@
+<header class="header-container row">
+
+    <div ngbDropdown class="dropdown d-inline-block">
+        <div class="dropdown-list" ngbDropdownMenu aria-labelledby="dropdownSettings">
+            <label>{{'header.themes' | translate }}</label>
+            <button *ngFor="let theme of colorThemes" class="dropdown-item" (click)="selectTheme(theme.name)">
+                <fa-icon icon="circle" class="primary-color-text" [ngStyle]="{color: theme.code}"></fa-icon>
+                {{'theme.' + theme.name | translate }}
+            </button>
+            <label>{{'header.language' | translate }}</label>
+            <button class="dropdown-item" (click)="selectLanguage('en')">
+                {{'lang.en' | translate }}
+            </button>
+            <button class="dropdown-item" (click)="selectLanguage('es')">
+                {{'lang.es' | translate }}
+            </button>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,35 @@
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    .dropdown {
+        &:hover {
+            cursor: pointer;
+        }
+        a {
+            margin-left: 0.5rem;
+        }
+        .dropdown-toggle::after {
+            display: none;
+        }
+        .dropdown-list {
+            label {
+                padding-left: 0.5rem;
+            }
+            .dropdown-item {
+                .active, &:active {
+                    background: inherit;
+                    color: inherit;
+                    outline: none;
+                }
+                fa-icon {
+                    margin-right: 0.3rem;
+                }
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,5 @@
+<div class="container" [ngClass]="getTheme()">
+  <app-header class="app-header" (changeTheme)="changeTheme($event)"></app-header>
+  <user-profile class="user-profile"></user-profile>
+  <app-footer class="app-footer"></app-footer>
+</div>

@@ -1,0 +1,19 @@
+.app-header {
+    grid-area: header;
+}
+.user-profile {
+    grid-area: profile;
+}
+.app-footer {
+    grid-area: footer;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% auto;
+    grid-template-areas: 
+        "header"
+        "profile"
+        "footer";
+    grid-gap: 2rem;
+}

@@ -1,0 +1,79 @@
+@import './../../../../../sass/variables';
+@import './../../../../../sass/mixins';
+
+.information-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "photo information";
+    padding: 1rem 0rem;
+
+    .photo {
+        grid-area: photo;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        img {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    .profile-info {
+        grid-area: information;
+        display: flex;
+        flex-flow: column wrap;
+        margin-left: 2rem;
+        & > div {
+            margin-bottom: 0.5rem;
+            padding: 0;
+        }
+        .user-name {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 3rem;
+
+            .status-item {
+                color: #ffffff;
+                padding: 0.3rem;
+                border-radius: 0.4rem;
+            }
+        }
+        
+    }
+
+    .display-inline {
+        align-items: center;
+    }
+}
+
+
+.wrapper {
+    border-top: none;
+    .two-columns-container {
+        grid-template-columns: 30% 70%;
+    
+        .btn-upload {
+            padding: 0;
+            width: 8rem;
+        }
+    
+        input[type="file"] {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .field-name {
+            align-self: center;
+        }
+        .label--error {
+            color: #dc3232;
+            font-size: 0.8rem;
+        }
+    }
+}

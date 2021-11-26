@@ -1,0 +1,27 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+
+$themes: (
+    green: (
+        primaryColor: #65b61b,
+        primaryDarkColor: #488411,
+        secondaryColor: #ff9f00,
+        secondaryLightColor: #fbdeae
+    ),
+    red: (
+        primaryColor: #dc3232,
+        primaryDarkColor: #841111,
+        secondaryColor: #3f51b5,
+        secondaryLightColor: #c6cdf3
+    ),
+    blue: (
+        primaryColor: #30a4e2,
+        primaryDarkColor: #114384,
+        secondaryColor: #ff9f00,
+        secondaryLightColor: #fbdeae
+    )
+);
+
+$backgroundColor: #fafafa;
+$textLightColor: #8c8c8c;
+$borderColor: #e6e6e6;

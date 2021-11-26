@@ -1,0 +1,21 @@
+<div class="profile-header row">
+    <div class="section-name border-bottom-green">
+        <h4>{{'profile' | translate | uppercase}}</h4>
+    </div>
+    <div class="actions">
+        <button type="button" class="btn btn-outline-primary" 
+        *ngIf="edit" (click)="goBack()">{{'action.back' | translate}}</button>
+    </div>
+</div>
+<div class="profile-container row">
+    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-12">
+        <user-information [editProfile]="edit"></user-information>
+        <recommendation></recommendation>
+        <user-reputation></user-reputation>
+        <interest></interest>
+        <experience></experience>
+    </div>
+    <div class="user-services col-md-5 col-sm-12 col-12 col-xl-5 col-lg-5">
+        <skills></skills>
+    </div>
+</div>
