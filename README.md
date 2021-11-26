@@ -1,1 +1,3 @@
-# user-skills-display
+# Showcase the skills for a given user.
+
+Challenge
