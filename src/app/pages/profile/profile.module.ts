@@ -1,3 +1,8 @@
+/**  
+ __author__ = "Egide Niyomukiza"
+ __copyright__ = "Copyright 2021, TORRE"
+ **/
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';

@@ -1,4 +1,4 @@
-# User Skill Display Angular
+# Torre Technical Test
 
 ## Installation / Setup
 

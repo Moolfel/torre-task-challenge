@@ -1,3 +1,8 @@
+/**  
+ __author__ = "Egide Niyomukiza"
+ __copyright__ = "Copyright 2021, TORRE"
+ **/
+
 import { Component, EventEmitter, Output} from '@angular/core';
 import { Properties } from '../../utils/properties';
 import { TranslateService } from '@ngx-translate/core';

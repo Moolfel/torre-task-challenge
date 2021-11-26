@@ -1,3 +1,8 @@
+/**  
+ __author__ = "Egide Niyomukiza"
+ __copyright__ = "Copyright 2021, TORRE"
+ **/
+
 import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 import { BackendService } from '../../../../shared/services/backend.service';
 

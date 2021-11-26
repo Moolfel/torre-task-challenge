@@ -1,3 +1,9 @@
+/**  
+ __author__ = "Egide Niyomukiza"
+ __copyright__ = "Copyright 2021, TORRE"
+ **/
+
+
 import { Component } from '@angular/core';
 import { Properties } from './shared/utils/properties';
 import { TranslateService } from '@ngx-translate/core';
